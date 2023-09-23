@@ -36,11 +36,10 @@ function addProductToCart(productId) { //adds product to cart
 
     if (!productInCart) {
       cart.push({ ...product, quantity: 1 }); //product not in cart add it
-      product.quantity = 1;
     } else {
       productInCart.quantity++;
-      product.quantity++
     }
+    product.quantity++;
   }
 }
 
